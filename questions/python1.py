@@ -34,6 +34,9 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
+from this import d
+
+
 def one(input1, input2):
 	a = len(input1)
 	b = len(input2)
@@ -167,7 +170,11 @@ def five(input):
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
 def six(string, int, char):
-    #if string[1]
+	if int>len(string):
+			return False
+	# print(string[int-1].lower())
+	if(string[int-1]).lower() == char:
+		return True
 	return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
@@ -191,8 +198,14 @@ def six(string, int, char):
 	# Take a look at the documentation for Strings, List and range.
 
 def seven(inputString, char):
+	count=0
+	for char2 in inputString:
+		count = count+1
+		if char == char2:
+			print(count)
+			return count
 	return -1
-
+#seven("Fridge for sale","z")
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 8>
