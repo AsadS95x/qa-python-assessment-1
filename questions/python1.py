@@ -224,7 +224,7 @@ def seven(inputString, char):
 	 
     # <EXAMPLES>
 
-	# eight("55 72 86") → 14
+	# eight("55 72 86")# → 14
 	# eight("15 72 80 164") → 11
 	# eight("555 72 86 45 10") → 15
 
@@ -233,7 +233,20 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+	arg1
+	total =0
+	total2= 0
+	for i in arg1:
+		print(str(total)+" "+i)
+		if i == " ": 
+			total2= total2+total
+			total = 0
+			continue
+		newint = int(i)
+		total = total+newint
+		print(total)
+		
+	return total2
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
