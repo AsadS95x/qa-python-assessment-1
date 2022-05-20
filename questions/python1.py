@@ -14,8 +14,7 @@
 	# Every command has help documentation. To read it:
 	# 	1. Access Python from your CLI
 	# 	2. Type help(<command>) and hit enter, where <command> is the command you want help with. For example: help(str)
-
-#------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 1>
 
@@ -36,15 +35,14 @@
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 def one(input1, input2):
-    a = len(input1)
-    b = len(input2)
-	if (a>b):
-    	return a
+	a = len(input1)
+	b = len(input2)
+	if a>b:
+		return input1
 	elif (b>a):
-   		return b
+		return input2
 	else:
-		return a+" "+b
-
+		return input1+" "+input2
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -68,10 +66,10 @@ def one(input1, input2):
 	# No hints for this question
 
 def two(arg1):
-    if (arg1 % 5) == 0 and (arg1%3)==0:
-    	return "fizzbuzz"
+	if (arg1 % 5) == 0 and (arg1%3)==0:
+		return "fizzbuzz"
 	elif (arg1 % 3) == 0:
-    	return "fizz"
+		return "fizz"
 	elif (arg1 % 5) == 0: 
 		return "buzz"
 		
@@ -94,13 +92,13 @@ def two(arg1):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def three(input):
-    vowels = ['a','e','i','o','u']
+	vowels = ['a','e','i','o','u'] 
 	count = 0
-	for char in input:
-    		for i in vowels:
-    		if i == char:
-    			count += count
-    return count
+	for char1 in input:
+		for char2 in vowels:
+			if char1.lower() == char2:
+				count = count+1
+	return count
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -143,10 +141,10 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-    	output =0
-    	for i in input-1:
-    		output+=i*(i+1)
-	return output
+		output =0
+		for i in range(input):
+			output= output*i
+		return output
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -168,6 +166,7 @@ def five(input):
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
 def six(string, int, char):
+    #if string[1]
 	return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
