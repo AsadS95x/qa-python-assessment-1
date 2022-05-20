@@ -200,12 +200,14 @@ def six(string, int, char):
 def seven(inputString, char):
 	count=0
 	for char2 in inputString:
-		count = count+1
+		if char2 != " ":
+			count = count+1
 		if char == char2:
 			print(count)
 			return count
+
 	return -1
-#seven("Fridge for sale","z")
+
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 8>
