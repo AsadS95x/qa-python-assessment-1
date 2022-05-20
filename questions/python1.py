@@ -143,7 +143,10 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+    	output =0
+    	for i in input-1:
+    		output+=i*(i+1)
+	return output
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
